@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .holder{
-            display: grid;
-            width: 200px;
-            height: 200px;
-            background-color: red;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            row-gap: 10px;
-            border: 1px solid #000;
-        }
-    </style>
-</head>
-<body>
-    <body>
-    <div class="holder">
-        <div>a</div>
-        <div>b</div>
-        <div>c</div>
-        <div>d</div>
-    </div>
-</body>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grid</title>
 
+<style>
+.holder {
+    display: grid;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+
+    /* required grid setup */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+</style>
+</head>
+
+<body>
+<div class="holder">
+    <div>a</div>
+    <div>b</div>
+    <div>c</div>
+    <div>d</div>
+</div>
 </body>
 </html>
